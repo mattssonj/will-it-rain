@@ -1,14 +1,14 @@
 ### will it rain?
 
-This small Java program is build for a job interview at CTK.
+This small Java program is built for a job interview at CTK.
 
 ### What is the program doing
 It will check if there is going to be rain in the next 24 hours on a given location. 
 
 ### How to run
-To run the program maven is needed. 
+To run the program Maven is needed. 
 [Install instructions here](https://maven.apache.org/install.html) <br>
-why maven? to easier access the org.json library
+Why Maven? to easier use the dependency on org.json library
 
 ##### run from terminal
 ``` 
