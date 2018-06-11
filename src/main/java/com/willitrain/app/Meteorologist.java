@@ -17,10 +17,10 @@ public class Meteorologist {
         JSONArray array = json.getJSONArray("list");
 
         for (int i = 0; i < 8; i++) {
-            JSONObject obj = array.getJSONObject(i);
-            JSONArray something = obj.getJSONArray("weather");
+            JSONObject currentInterval = array.getJSONObject(i);
+            JSONArray weatherInfo = currentInterval.getJSONArray("weather");
 
-            if (something.getJSONObject(0).get("main").equals("Rain")) {
+            if (weatherInfo.getJSONObject(0).get("main").equals("Rain")) {
                 return true;
             }
         }

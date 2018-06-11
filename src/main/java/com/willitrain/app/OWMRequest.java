@@ -44,13 +44,6 @@ public class OWMRequest {
     }
 
     private URL apiCall() throws MalformedURLException {
-
-        if (EnvironmentKey.OWM_API_KEY.equalsIgnoreCase("DUMMYKEY")) {
-            System.out.println("You have to add your OpenWeatherMap API key to EnvironmentKey.java");
-            System.out.println("Then recompile and run the program again");
-            System.exit(0);
-        }
-
         return new URL(
                 "http://" +
                         API +
